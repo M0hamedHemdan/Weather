@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="imges/img/WhatsApp_Image_2024-12-07_at_18.36.35_a664e1f6.png" />
+
+    <!-- font awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark myNav py-4">
+      <div class="container My-w">
+        <a class="navbar-brand myLogo" href="#">
+          <img src="imges/logo@2x.png" alt="Logo" class="logo" />
+          <div>
+            <p>Weather <span class="d-block">tagline goes here</span></p>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white px-3" href="#">News</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white px-3" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white px-3" href="#">Photos</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white px-3" href="#">Contat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="">
+      <div class="myAmge pb-5">
+        <div class="container Input  My-w">
+          <div class="mb-1 mmmm">
+
+            <!-- <p class="alert alert-danger my-4 w-75 mx-auto d-none" id="alertError">
+              Error Data
+            </p> -->
+            <input
+              type="email"
+              class="form-control rounded-5 bg-dark border-0 input text-white"
+              id="searchInput"
+              aria-describedby="emailHelp"
+              placeholder="Find your location..."
+            />
+
+            <button type="submit" class="btn btn-primary button rounded-5" id="btnInput">Find</button>
+          </div>
+        </div>
+       
+        <div class="container My-w m-auto">
+          
+          <div class="row bg-info  rounded-3 overflow-hidden " id="rowData">
+            
+  
+  
+  
+           
+          </div>
+          </div>
+      </div>
+      
+    </header>
+    <footer class="site-footer ">
+      <div class="container My-w m-auto">
+        <div class="row mb-3 ">
+          <div class="col-md-8">
+            <div class="mb-3 input">
+              <input
+                type="email"
+                class="form-control rounded-5 bg-dark border-0 pYY"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Find your location..."
+              />
+  
+              <button type="submit" class="btn btn-primary button rounded-5">Subscribe</button>
+            </div>
+            
+          </div>
+          <div class="col-md-3 ms-auto">
+            <div class="icone">
+              <span>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <i class="fa-brands fa-pinterest"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer>
+    <!-- font awesome -->
+    <script src="./js/all.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- style js -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

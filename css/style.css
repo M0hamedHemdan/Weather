@@ -1,0 +1,187 @@
+body {
+  font-family: "Roboto", serif;
+}
+a {
+  text-decoration: none;
+}
+.my-dark{
+    
+    background-color: #262936;
+}
+.myDark{
+    background-color: #222530;
+}
+
+
+.colorp{
+    color: #bfc1c8;
+}
+.bbg{
+    background-color: #2d303d;
+}
+.bbbg{
+    background-color: #323544 ;
+}
+
+.myNav .myLogo {
+  display: flex;
+  align-items: center;
+}
+.myNav .myLogo img {
+  width: 25%;
+  margin-right: 10px;
+}
+.myNav .myLogo div p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+p span {
+  font-size: 0.5rem;
+}
+
+.myNav ul a {
+  font-size: 0.8rem;
+  padding: 5px 20px !important;
+}
+.myNav ul li a{
+  transition: outline  !important;
+}
+.myNav ul li a:hover {
+  outline: 2px solid #137dae !important;
+  border-radius: 20px;
+  color: #137dae !important;
+}
+.active {
+  outline: 2px solid #137dae;
+  border-radius: 20px;
+  color: #137dae !important;
+}
+/*============ End Navbar ============ */
+/* body{
+    background-color: #2d303d;
+    min-height: 100vh;
+} */
+ .My-w{
+  width: 80%;
+ }
+header .myAmge {
+  background-image: url(../imges/banner.png);
+  background-repeat: no-repeat;
+  height: 50%;
+}
+header{
+  min-height: 60vh;
+  background-color: #1E202B;
+
+}
+header .myAmge .Input {
+  padding: 60px 0;
+}
+header .myAmge .input {
+  padding: 13px 20px;
+}
+::placeholder {
+  color: #7b7b7b !important;
+  font-size: 0.8rem;
+}
+header .myAmge .mmmm{
+    position: relative;
+}
+header .myAmge .button {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  font-size: 0.8rem;
+  padding: 8px 40px;
+  cursor: pointer;
+}
+
+.row .heedar {
+  background-color: #2d303d;
+  color: #bfc1c8;
+  padding: 10px;
+  font-size: .875rem;
+}
+.myCard .card-body{
+    background-color: #323544;
+    padding: 30px 20px;
+}
+.myCard .card-body h2{
+    font-size:3rem;
+}
+
+.myCard .card-body p{
+    font-size: .875rem;
+}
+
+.myCard .card-body .cardFooter{
+    font-size: .8rem;
+}
+.myCard .card-body .cardFooter img{
+    width: 15px;
+    margin-left: 10px;
+}
+.Cairo{
+    height: 100%;
+}
+.Cairo .Saturday{
+    padding: 10px;
+    font-size: .875rem;
+}
+.Cairo .cardBody{
+    padding: 30px 20px;
+}
+.Cairo .cardBody img{
+    width: 48px;
+}
+.Cairo .cardBody p{
+    font-size: .875rem;
+}
+/*============ start Footer ============ */
+.site-footer{
+  background-color: #262936;
+  padding: 50px 0px;
+}
+
+
+
+
+.icone span a{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1E202B;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  transition: background-color .5s , color .5s;
+}
+
+.icone span a:hover{
+  background-color: #009AD8;
+  color: #fff;
+}
+footer p{
+  color: #BFC1C8;
+  font-size: .7rem;
+  margin: 0px 0px 0px 0px;
+}
+
+.input{
+  position: relative;
+  
+}
+.pYY{
+  padding: 13px;
+}
+.button{
+  position: absolute;
+  right: 9px;
+  top: 6px;
+  font-size: 0.7rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 555;
+}
