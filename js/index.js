@@ -1,7 +1,7 @@
-let searchInput = document.getElementById('searchInput');
+const searchInput = document.getElementById('searchInput');
 // let alertError = document.getElementById('alertError');
-let btnInput = document.getElementById('btnInput');
-let math = new Date
+const btnInput = document.getElementById('btnInput');
+const math = new Date
 let Data;
 
 btnInput.addEventListener("click" , function(){
@@ -9,7 +9,12 @@ btnInput.addEventListener("click" , function(){
   
 });
 searchInput.addEventListener("input" , function(){
-  search(searchInput.value);
+
+  if (searchInput.value.trim()==="") {
+    search("Cairo");
+  } else {
+    search(searchInput.value);
+  }
   
 });
 
@@ -17,23 +22,24 @@ search("Cairo");
 async function search(input) {
   try {
     let responses = await (await fetch (`https://api.weatherapi.com/v1/forecast.json?key=58eb1103618f45eaa48232457240612&q=${input}&days=3&aqi=no&alerts=no`)).json();
-    console.log(responses.location.localtime );
+    // console.log(responses.location.localtime );
     Data = responses
       displayData()
       // alertError.classList.add("d-none");
   } catch (error) {
-    let hamada =`
+    const cartona =
+    `
     <div class="col-md-4 px-0 ">
               <div class="myCard ">
                 <div class="heedar d-flex justify-content-between align-content-center ">
-                  <span></span>
+                  <span>Saturday</span>
                   <span><span>5</span>December </span>
                 </div>
                 <div class="card-body colorp" >
-                  <span id="city" class="pb-4 d-block"></span>
-                  <h2 class="text-white fw-bold">°C</h2>
+                  <span id="city" class="pb-4 d-block">Cairo</span>
+                  <h2 class="text-white fw-bold">18.2°C°C</h2>
                   <div>
-                    <img src="": alt="night">
+                    <img src="../imges/143.png": alt="night">
                   </div>
                   <p class="text-primary"></p>
   
@@ -62,9 +68,9 @@ async function search(input) {
                   <span>Thursday</span>
                 </div>
                 <div class="cardBody text-center card-body ">
-                  <img src="" alt="" />
+                  <img src="../imges/143.png" alt="" />
                   <h2 class="mt-4 fs-4 text-white">
-                    °C
+                   15 °C
                   </h2>
                   <span class="celsiusDegree colorp"
                     >°C</span
@@ -79,19 +85,19 @@ async function search(input) {
                   <span>Sunday</span>
                 </div>
                 <div class="cardBody text-center card-body bbbg ">
-                  <img src="" alt="" />
+                  <img src="../imges/119.png" alt="" />
                   <h2 class="mt-4 fs-4 text-white">
-                    °C
+                    20°C
                   </h2>
                   <span class="celsiusDegree colorp"
-                    >°C</span
+                    >30°C</span
                   >
                   <p class="text-primary p-4"></p>
                 </div>
               </div>
             </div>
     `
-    document.getElementById('rowData').innerHTML=hamada
+    document.getElementById('rowData').innerHTML = cartona
     // alertError.classList.remove("d-none");
     
   }
@@ -102,7 +108,7 @@ async function search(input) {
 
 function displayData(){
   
-  let cartona =  
+  const cartona =  
   
   `
 
