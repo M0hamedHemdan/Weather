@@ -10,16 +10,21 @@ btnInput.addEventListener("click" , function(){
 });
 searchInput.addEventListener("input" , function(){
 
-  if (searchInput.value.trim()==="") {
-    search("Cairo");
-  } else {
-    search(searchInput.value);
+  // if (searchInput.value.trim()==="") {
+  //   search(searchInput.value);
+  // } else {
+  //   search(searchInput.value);
+  // }
+  try {
+    search(searchInput.value)
+  } catch (error) {
+    
   }
   
 });
 
 search("Cairo");
-async function search(input) {
+async function search(input ) {
   try {
     let responses = await (await fetch (`https://api.weatherapi.com/v1/forecast.json?key=58eb1103618f45eaa48232457240612&q=${input}&days=3&aqi=no&alerts=no`)).json();
     // console.log(responses.location.localtime );
@@ -27,78 +32,78 @@ async function search(input) {
       displayData()
       // alertError.classList.add("d-none");
   } catch (error) {
-    const cartona =
-    `
-    <div class="col-md-4 px-0 ">
-              <div class="myCard ">
-                <div class="heedar d-flex justify-content-between align-content-center ">
-                  <span>Saturday</span>
-                  <span><span>5</span>December </span>
-                </div>
-                <div class="card-body colorp" >
-                  <span id="city" class="pb-4 d-block">Cairo</span>
-                  <h2 class="text-white fw-bold">18.2°C°C</h2>
-                  <div>
-                    <img src="../imges/143.png": alt="night">
-                  </div>
-                  <p class="text-primary"></p>
+    // const cartona =
+    // `
+    // <div class="col-md-4 px-0 ">
+    //           <div class="myCard ">
+    //             <div class="heedar d-flex justify-content-between align-content-center ">
+    //               <span>Saturday</span>
+    //               <span><span>5</span>December </span>
+    //             </div>
+    //             <div class="card-body colorp" >
+    //               <span id="city" class="pb-4 d-block">Cairo</span>
+    //               <h2 class="text-white fw-bold">18.2°C°C</h2>
+    //               <div>
+    //                 <img src="../imges/143.png": alt="night">
+    //               </div>
+    //               <p class="text-primary"></p>
   
   
-                  <div class="cardFooter">
-                    <span class="">
-                      <img src="imges/icon-umberella@2x.png"  alt="" />
-                      <span >20%</span>
-                    </span>
-                    <span>
-                      <img src="imges/icon-wind@2x.png" alt="" />
-                      <span>18 km/h</span>
-                    </span>
-                    <span>
-                      <img src="imges/icon-compass@2x.png" alt="" />
-                      <span>East</span>
-                    </span>
-                  </div>
-                </div>
+    //               <div class="cardFooter">
+    //                 <span class="">
+    //                   <img src="imges/icon-umberella@2x.png"  alt="" />
+    //                   <span >20%</span>
+    //                 </span>
+    //                 <span>
+    //                   <img src="imges/icon-wind@2x.png" alt="" />
+    //                   <span>18 km/h</span>
+    //                 </span>
+    //                 <span>
+    //                   <img src="imges/icon-compass@2x.png" alt="" />
+    //                   <span>East</span>
+    //                 </span>
+    //               </div>
+    //             </div>
                 
-              </div>
-            </div>
-            <div class="col-md-4 px-0">
-              <div class="Cairo my-dark ">
-                <div class="myDark colorp Saturday text-center ">
-                  <span>Thursday</span>
-                </div>
-                <div class="cardBody text-center card-body ">
-                  <img src="../imges/143.png" alt="" />
-                  <h2 class="mt-4 fs-4 text-white">
-                   15 °C
-                  </h2>
-                  <span class="celsiusDegree colorp"
-                    >°C</span
-                  >
-                  <p class="text-primary p-4"></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 px-0 bbbg">
-              <div class="Cairo my-dark  ">
-                <div class="bbg colorp Saturday text-center ">
-                  <span>Sunday</span>
-                </div>
-                <div class="cardBody text-center card-body bbbg ">
-                  <img src="../imges/119.png" alt="" />
-                  <h2 class="mt-4 fs-4 text-white">
-                    20°C
-                  </h2>
-                  <span class="celsiusDegree colorp"
-                    >30°C</span
-                  >
-                  <p class="text-primary p-4"></p>
-                </div>
-              </div>
-            </div>
-    `
-    document.getElementById('rowData').innerHTML = cartona
-    // alertError.classList.remove("d-none");
+    //           </div>
+    //         </div>
+    //         <div class="col-md-4 px-0">
+    //           <div class="Cairo my-dark ">
+    //             <div class="myDark colorp Saturday text-center ">
+    //               <span>Thursday</span>
+    //             </div>
+    //             <div class="cardBody text-center card-body ">
+    //               <img src="../imges/143.png" alt="" />
+    //               <h2 class="mt-4 fs-4 text-white">
+    //                15 °C
+    //               </h2>
+    //               <span class="celsiusDegree colorp"
+    //                 >°C</span
+    //               >
+    //               <p class="text-primary p-4"></p>
+    //             </div>
+    //           </div>
+    //         </div>
+    //         <div class="col-md-4 px-0 bbbg">
+    //           <div class="Cairo my-dark  ">
+    //             <div class="bbg colorp Saturday text-center ">
+    //               <span>Sunday</span>
+    //             </div>
+    //             <div class="cardBody text-center card-body bbbg ">
+    //               <img src="../imges/119.png" alt="" />
+    //               <h2 class="mt-4 fs-4 text-white">
+    //                 20°C
+    //               </h2>
+    //               <span class="celsiusDegree colorp"
+    //                 >30°C</span
+    //               >
+    //               <p class="text-primary p-4"></p>
+    //             </div>
+    //           </div>
+    //         </div>
+    // `
+    // document.getElementById('rowData').innerHTML = cartona
+    // // alertError.classList.remove("d-none");
     
   }
   

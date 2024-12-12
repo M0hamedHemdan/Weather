@@ -4,25 +4,23 @@ body {
 a {
   text-decoration: none;
 }
-.my-dark{
-    
-    background-color: #262936;
+.my-dark {
+  background-color: #262936;
 }
-.myDark{
-    background-color: #222530;
+.myDark {
+  background-color: #222530;
 }
 
-
-.colorp{
-    color: #bfc1c8;
+.colorp {
+  color: #bfc1c8;
 }
-.bbg{
-    background-color: #2d303d;
+.bbg {
+  background-color: #2d303d;
 }
-.bbbg{
-    background-color: #323544 ;
+.bbbg {
+  background-color: #323544;
 }
-nav .myCollapse{
+nav .myCollapse {
   width: 9%;
   height: 8%;
   padding-inline: 0px;
@@ -30,17 +28,17 @@ nav .myCollapse{
   text-align: center;
   border-radius: 50%;
   border: 0;
-  font-size: .8rem;
+  font-size: 0.8rem;
   box-shadow: none;
   border-color: transparent;
-  transition: border-color .5s;
+  transition: border-color 0.5s;
 }
 .navbar-toggler:focus {
   box-shadow: none;
 }
-nav .myCollapse:hover{
-  border: 2px solid ;
-  border-color: #09c
+nav .myCollapse:hover {
+  border: 2px solid;
+  border-color: #09c;
 }
 
 .myNav .myLogo {
@@ -53,7 +51,7 @@ nav .myCollapse:hover{
   margin-right: 10px;
 }
 .myNav .myLogo div p {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: 0;
   padding: 0;
 }
@@ -66,8 +64,8 @@ p span {
   font-size: 0.8rem;
   padding: 5px 20px !important;
 }
-.myNav ul li a{
-  transition: outline  !important;
+.myNav ul li a {
+  transition: outline !important;
   margin-block: 10px;
 }
 .myNav ul li a:hover {
@@ -85,18 +83,17 @@ p span {
     background-color: #2d303d;
     min-height: 100vh;
 } */
- .My-w{
+.My-w {
   width: 80%;
- }
+}
 header .myAmge {
   background-image: url(../imges/banner.png);
   background-repeat: no-repeat;
   height: 50%;
 }
-header{
+header {
   min-height: 60vh;
-  background-color: #1E202B;
-
+  background-color: #1e202b;
 }
 header .myAmge .Input {
   padding: 60px 0;
@@ -108,8 +105,8 @@ header .myAmge .input {
   color: #7b7b7b !important;
   font-size: 0.8rem;
 }
-header .myAmge .mmmm{
-    position: relative;
+header .myAmge .mmmm {
+  position: relative;
 }
 header .myAmge .button {
   position: absolute;
@@ -124,82 +121,78 @@ header .myAmge .button {
   background-color: #2d303d;
   color: #bfc1c8;
   padding: 10px;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
-.myCard .card-body{
-    background-color: #323544;
-    padding: 30px 20px;
+.myCard .card-body {
+  background-color: #323544;
+  padding: 30px 20px;
 }
-.myCard .card-body h2{
-    font-size:3rem;
-}
-
-.myCard .card-body p{
-    font-size: .875rem;
+.myCard .card-body h2 {
+  font-size: 3rem;
 }
 
-.myCard .card-body .cardFooter{
-    font-size: .8rem;
+.myCard .card-body p {
+  font-size: 0.875rem;
 }
-.myCard .card-body .cardFooter img{
-    width: 15px;
-    margin-left: 10px;
+
+.myCard .card-body .cardFooter {
+  font-size: 0.8rem;
 }
-.Cairo{
-    height: 100%;
+.myCard .card-body .cardFooter img {
+  width: 15px;
+  margin-left: 10px;
 }
-.Cairo .Saturday{
-    padding: 10px;
-    font-size: .875rem;
+.Cairo {
+  height: 100%;
 }
-.Cairo .cardBody{
-    padding: 30px 20px;
+.Cairo .Saturday {
+  padding: 10px;
+  font-size: 0.875rem;
 }
-.Cairo .cardBody img{
-    width: 48px;
+.Cairo .cardBody {
+  padding: 30px 20px;
 }
-.Cairo .cardBody p{
-    font-size: .875rem;
+.Cairo .cardBody img {
+  width: 48px;
+}
+.Cairo .cardBody p {
+  font-size: 0.875rem;
 }
 /*============ start Footer ============ */
-.site-footer{
+.site-footer {
   background-color: #262936;
   padding: 50px 0px;
 }
 
-
-
-
-.icone span a{
+.icone span a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #1E202B;
+  background-color: #1e202b;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-  transition: background-color .5s , color .5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
-.icone span a:hover{
-  background-color: #009AD8;
+.icone span a:hover {
+  background-color: #009ad8;
   color: #fff;
 }
-footer p{
-  color: #BFC1C8;
-  font-size: .7rem;
+footer p {
+  color: #bfc1c8;
+  font-size: 0.7rem;
   margin: 0px 0px 0px 0px;
 }
 
-.input{
+.input {
   position: relative;
-  
 }
-.pYY{
+.pYY {
   padding: 13px;
 }
-.button{
+.button {
   position: absolute;
   right: 9px;
   top: 6px;
